@@ -73,7 +73,6 @@ public class MeuPerfil extends AppCompatActivity {
         if (cursor != null && cursor.moveToFirst()) {
             txtEmail.setText(cursor.getString(cursor.getColumnIndexOrThrow("email")));
             numTel.setText(cursor.getString(cursor.getColumnIndexOrThrow("telefone")));
-            // Não carregamos a senha por questões de segurança
             cursor.close();
         } else {
             Toast.makeText(this, "Erro ao carregar dados do usuário", Toast.LENGTH_SHORT).show();
