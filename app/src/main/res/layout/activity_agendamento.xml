@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#f7f0fc"
+    android:padding="16dp"
+    android:id="@+id/agendamento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <!-- Botão Voltar alinhado à esquerda -->
+        <Button
+            android:id="@+id/btAgendaReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f7f0fc"
+            android:drawableLeft="@drawable/return_icon"
+            android:paddingLeft="10dp"
+            android:text="Voltar"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agende um Horário"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#2C2C2C"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Card do Serviço -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_marginBottom="16dp"
+            android:background="#DCE6F6"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Informações do Serviço -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/serviceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cílios Egípcio:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/servicePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Valor: R$115,00"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/serviceDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingEnd="8dp"
+                    android:textColor="#333"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:scrollbars="vertical"
+                    android:maxLines="5"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="81dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borda_img"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:id="@+id/servicoSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/egipcio_sombra" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Texto seleção -->
+
+        <!-- Card Seleção -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Seleção de Agendamento"
+            android:textColor="#2C2C2C"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/borda_img"
+            android:backgroundTint="#9bb1be"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Selecione uma Date e Hora"
+                android:textColor="#000"
+                android:textSize="19sp" />
+
+            <!-- DatePicker no modo spinner -->
+            <DatePicker
+                android:id="@+id/DataAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:spinnersShown="true"/>
+
+            <Spinner
+                android:id="@+id/spinnerTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/spinner_background" />
+        </LinearLayout>
+
+
+        <!-- Botão Agendar -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgendar"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/botao_fundo_select"
+            android:text="Confirmar"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

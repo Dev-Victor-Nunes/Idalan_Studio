@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f0fc"
+    android:id="@+id/meu_perfil">
+
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f7f0fc"
+        android:drawableLeft="@drawable/return_icon"
+        android:paddingLeft="10dp"
+        android:text="Voltar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="736dp"
+        android:fontFamily="cursive"
+        android:text="Meu Perfil"
+        android:textAlignment="center"
+        android:textColor="#091c1a"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btReturn"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="533dp"
+        android:background="#c1c5c7"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Alterar seus dados"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <!--OBJETOS COM ID PARA CONECTAR CRIAR EVENTOS EM JAVA-->
+
+        <EditText
+            android:id="@+id/numTel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/caixa_texto"
+            android:drawableStart="@drawable/tel_icon"
+            android:drawablePadding="16dp"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/caixa_texto"
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="16dp"
+            android:hint="E-mail"
+            android:inputType="text"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/caixa_texto"
+            android:drawableStart="@drawable/lock_icon"
+            android:drawablePadding="16dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/txtConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/caixa_texto"
+            android:drawableStart="@drawable/checked_senha"
+            android:drawablePadding="16dp"
+            android:hint="Confirme sua senha"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/botao_fundo_select"
+            android:text="Salvar"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btDeletConta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="50dp"
+            android:textColor="#FF0000"
+            android:background="@drawable/botao_fundo_select"
+            android:drawableStart="@drawable/delete_icon"
+            android:text="Deletar Conta"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformacoesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#f7f0fc"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnReturnToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f7f0fc"
+            android:drawableLeft="@drawable/return_icon"
+            android:paddingLeft="10dp"
+            android:text="Voltar"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Informações e Ajuda"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:fontFamily="cursive" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/borda_img"
+            android:backgroundTint="@color/black">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"
+                android:text="Suporte"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Telefone: 11 932036361\n\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"
+                android:text="Contato"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Instagran: @idalanstudio\n\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"
+                android:text="Feedback"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Avalie-nos através do Google:\n\n https://maps.app.goo.gl/Budv8buo7VCzCWTNA"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

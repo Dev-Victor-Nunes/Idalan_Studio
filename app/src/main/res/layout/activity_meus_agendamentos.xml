@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meus_agendamentos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f0fc"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Botão de voltar -->
+        <Button
+            android:id="@+id/btnReturnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f7f0fc"
+            android:drawableLeft="@drawable/return_icon"
+            android:paddingLeft="10dp"
+            android:text="Voltar"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Meus Agendamentos"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:fontFamily="cursive" />
+
+        <!-- Últimos agendamentos -->
+
+        <TextView
+            android:id="@+id/tvUltimosAgendamentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:text="Últimos agendamentos:"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerUltimosAgendamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_background"
+            android:minHeight="48dp" />
+
+        <!-- Agendamentos pendentes -->
+
+        <TextView
+            android:id="@+id/tvAgendPendentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="24dp"
+            android:text="Seus Agendamentos :"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutAgendamentoPendente"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/borda_img"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvServicoSelecionado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DCE6F6"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="Serviço Selecionado:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescricaoServico"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="12dp"
+                android:background="#DCE6F6"
+                android:text="Cílios Egípcio:\n\nData | Seg 24 de mar\nHorário | 10:00hs"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Botão Cancelar -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCancelarAgendamento"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="80dp"
+            android:text="Cancelar Agendamento"
+            android:textColor="#FF0000"
+            android:background="@drawable/botao_fundo_select"
+            android:padding="12dp" />
+
+    </LinearLayout>
+    </ScrollView>
