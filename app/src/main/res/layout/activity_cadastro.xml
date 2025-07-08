@@ -18,9 +18,9 @@
         android:text="Voltar"
         android:textColor="@color/black"
         android:textSize="20dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="6dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="7dp" />
 
     <TextView
         android:id="@+id/TextView"
@@ -41,16 +41,16 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="642dp"
+        android:layout_width="416dp"
+        android:layout_height="617dp"
         android:background="#c1c5c7"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664">
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView4"
@@ -60,6 +60,7 @@
             android:fontFamily="sans-serif-condensed-light"
             android:text="Preencha seus Dados"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -159,6 +160,7 @@
             android:layout_marginRight="40dp"
             android:background="@drawable/botao_fundo_select"
             android:text="Salvar"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
 

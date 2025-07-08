@@ -14,7 +14,7 @@
         android:src="@drawable/logo_idalan"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="64dp" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/TextView"
@@ -92,6 +92,7 @@
             android:layout_marginRight="40dp"
             android:background="@drawable/botao_fundo_select"
             android:text="login"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
 
@@ -104,6 +105,7 @@
             android:layout_marginRight="40dp"
             android:background="@drawable/botao_fundo_select"
             android:text="Cadastrar"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
 
